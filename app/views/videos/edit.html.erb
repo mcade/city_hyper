@@ -1,6 +1,5 @@
-<h1>Editing video</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @video %> |
-<%= link_to 'Back', videos_path %>
+<%- model_class = Video -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Video %></h1>
+</div>
+<%= render :partial => 'form' %>
